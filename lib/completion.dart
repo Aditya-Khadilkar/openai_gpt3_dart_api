@@ -26,7 +26,7 @@ class CompletionApiParameters {
   final bool stream;
   final int? logprobs;
   final bool echo;
-  final String? stop;
+  final List<String>? stop;
   final num presencePenalty;
   final num frequencyPenalty;
   final int bestOf;
