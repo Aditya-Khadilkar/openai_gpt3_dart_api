@@ -65,7 +65,7 @@ class GPT3 {
       int? logProbs,
       bool echo = false,
       Engine engine = Engine.davinci,
-      String? stop,
+      List<String>? stop,
       num presencePenalty = 0,
       num frequencyPenalty = 0,
       int bestOf = 1,
