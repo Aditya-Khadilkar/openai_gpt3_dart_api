@@ -64,7 +64,7 @@ class GPT3 {
       bool stream = false,
       int? logProbs,
       bool echo = false,
-      Engine engine = Engine.gpt4,
+      Engine engine = Engine.davinci,
       List<String>? stop,
       num presencePenalty = 0,
       num frequencyPenalty = 0,
@@ -283,9 +283,9 @@ class Engine {
   static const ada = Engine._('text-ada-001');
   static const babbage = Engine._('text-babbage-001');
   static const curie = Engine._('text-curie-001');
-  static const davinci = Engine._('text-davinci-002');
+  static const davinci = Engine._('davinci-002');
   static const davinci3 = Engine._('text-davinci-003');
-  static const davinci3 = Engine._('gpt-4');
+  
 
   final String _string;
 
